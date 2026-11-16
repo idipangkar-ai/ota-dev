@@ -1,0 +1,253 @@
+
+# =====================================================
+# REACT NATIVE CLI
+# Professional Production-Ready Git Ignore
+# =====================================================
+
+
+# -----------------------------------------------------
+# 1. Node.js Dependencies
+# -----------------------------------------------------
+
+node_modules/
+jspm_packages/
+bower_components/
+
+
+# -----------------------------------------------------
+# 2. Environment Variables & Secrets
+# -----------------------------------------------------
+
+.env
+.env.*
+!.env.example
+!.env.sample
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+
+secrets/
+credentials/
+
+
+# -----------------------------------------------------
+# 3. React Native / Metro
+# -----------------------------------------------------
+
+.metro-health-check*
+.metro/
+.metro-cache/
+*.bundle
+
+# Metro temporary files
+*.packager-info
+*.packager.pid
+*.watchman-cookie-*
+
+# Native build output
+android/app/.cxx/
+android/app/build/
+android/build/
+
+
+# -----------------------------------------------------
+# 4. Android
+# -----------------------------------------------------
+
+android/.gradle/
+android/.idea/
+android/local.properties
+
+android/app/build/
+android/build/
+android/captures/
+
+android/.externalNativeBuild/
+android/.cxx/
+
+android/app/debug/
+android/app/release/
+
+android/app/*.apk
+android/app/*.aab
+
+android/app/google-services.json
+
+# Local debug signing key
+android/app/debug.keystore
+
+
+# -----------------------------------------------------
+# 5. iOS / Xcode
+# -----------------------------------------------------
+
+ios/Pods/
+ios/build/
+ios/DerivedData/
+
+ios/*.xcworkspace/xcuserdata/
+ios/*.xcodeproj/xcuserdata/
+
+ios/*.xcuserstate
+ios/*.xccheckout
+ios/*.moved-aside
+
+ios/xcuserdata/
+ios/DerivedData/
+
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# CocoaPods generated files
+ios/Podfile.lock
+
+# Uncomment if you intentionally want to commit Podfile.lock:
+# !ios/Podfile.lock
+
+# Xcode user-specific files
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+
+# -----------------------------------------------------
+# 6. Build & Distribution
+# -----------------------------------------------------
+
+dist/
+build/
+out/
+coverage/
+
+*.tsbuildinfo
+
+# Release artifacts
+*.apk
+*.aab
+*.ipa
+
+# Generated OTA releases
+ota-releases/
+
+# -----------------------------------------------------
+# 7. Testing & Reports
+# -----------------------------------------------------
+
+coverage/
+.nyc_output/
+test-results/
+jest-results/
+playwright-report/
+
+
+# -----------------------------------------------------
+# 8. Logs & Debugging
+# -----------------------------------------------------
+
+logs/
+*.log
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+debug.log
+*.stackdump
+
+
+# -----------------------------------------------------
+# 9. Cache & Temporary Files
+# -----------------------------------------------------
+
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache/
+
+tmp/
+temp/
+.temp/
+
+*.tmp
+*.swp
+*.swo
+
+
+# -----------------------------------------------------
+# 10. IDE & Editor
+# -----------------------------------------------------
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+*.code-workspace
+
+
+# -----------------------------------------------------
+# 11. Operating System
+# -----------------------------------------------------
+
+.DS_Store
+.DS_Store?
+._*
+
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+
+$RECYCLE.BIN/
+
+
+# -----------------------------------------------------
+# 12. TypeScript
+# -----------------------------------------------------
+
+*.tsbuildinfo
+
+
+# -----------------------------------------------------
+# 13. Watchman
+# -----------------------------------------------------
+
+.watchmanconfig.local
+
+
+# -----------------------------------------------------
+# 14. Fastlane
+# -----------------------------------------------------
+
+ios/fastlane/report.xml
+ios/fastlane/Preview.html
+ios/fastlane/screenshots/
+ios/fastlane/test_output/
+
+android/fastlane/report.xml
+android/fastlane/Preview.html
+android/fastlane/screenshots/
+android/fastlane/test_output/
+
+
+# -----------------------------------------------------
+# 15. Miscellaneous
+# -----------------------------------------------------
+
+*.orig
+*.rej
+*.bak
+*.old
+
+# Keep package manager lock files committed.
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
